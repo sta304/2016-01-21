@@ -75,7 +75,7 @@
 
   </style>
 
-  <link href="data:text/css;charset=utf-8,p%2C%20li%2C%20pre%20%7B%0Acolor%3A%20black%3B%0A%7D%0Aslides%20%3E%20slide%20%7B%0Amargin%2Dtop%3A%20%2D500px%3B%0A%7D" rel="stylesheet" type="text/css" />
+  <link href="data:text/css;charset=utf-8,p%2C%20li%2C%20pre%20%7B%0Acolor%3A%20black%3B%0A%7D%0A" rel="stylesheet" type="text/css" />
 
 
 </head>
@@ -192,9 +192,9 @@ V({\overline{y}}) &amp;= \frac{1}{n^2}\left[n\sigma^2 + n(n-1)\frac{-\sigma^2}{N
 
 <p>In fact it was defined presicely to acheive unbiasedness.</p>
 
-<p>Summary: \(\hat{y}\) is a random variable with mean \(\mu\) and variance \(V({\overline{y}})\), which depends on \(\sigma^2\), so we will use the specically constructed \(\hat{V}({{\overline{y}})}\) to estimate it.</p>
+<p>Summary: \({\overline{y}}\) is a random variable with mean \(\mu\) and variance \(V({\overline{y}})\), which depends on \(\sigma^2\), so we will use the specically constructed \(\hat{V}({{\overline{y}})}\) to estimate it.</p>
 
-<p>In other words \(\hat{V}({{\overline{y}})}\) is the <em>standard error</em> of \({\overline{y}}\).</p>
+<p>In other words \(\sqrt{\hat{V}({{\overline{y}})}}\) is the <em>standard error</em> of \({\overline{y}}\).</p>
 
 <p>\(\hat{V}({\overline{y}}) = \frac{s^2}{n}\left(\frac{N-n}{N}\right)\) is very close to \(\frac{s^2}{n}\) when \(n\) is small compared to \(N\). This perhaps suggests a concept of &quot;approximate independence&quot;.</p>
 
@@ -220,7 +220,7 @@ V({\overline{y}}) &amp;= \frac{1}{n^2}\left[n\sigma^2 + n(n-1)\frac{-\sigma^2}{N
 
 <p>OK, well not quite (in theory), but it seems like we really are saved, except possibly from our own stupidity.</p>
 
-<p>There are lots of &quot;Central Limit Theorems&quot; for various situations, include for sampling from finite populations.</p>
+<p>There are lots of &quot;Central Limit Theorems&quot; for various situations, including for sampling from finite populations.</p>
 
 <p>As long as \(n\) is large enough, and not too close to \(N\) which is also large, the following will hold:\[{\overline{y}} \sim^{approx} N\left(\mu, \frac{\sigma^2}{n}\left(\frac{N-n}{N-1}\right) \right)\]</p>
 
@@ -247,11 +247,11 @@ V({\overline{y}}) &amp;= \frac{1}{n^2}\left[n\sigma^2 + n(n-1)\frac{-\sigma^2}{N
 </ul>
 
 <ul class = 'build'>
-<li>We have all the building blocks. Our basic interval will simply be:\[{\overline{y}} \pm 2 \hat{V}({\overline{y}})\]</li>
+<li>We have all the building blocks. Our basic interval will simply be:\[{\overline{y}} \pm 2 \sqrt{\hat{V}({\overline{y}})}\]</li>
 </ul>
 
 <ul class = 'build'>
-<li><em>The Book</em> calls \(2 \hat{V}({\overline{y}})\) <em>the bound on the error of estimation</em>.</li>
+<li><em>The Book</em> calls \(2 \sqrt{\hat{V}({\overline{y}})}\) <em>the bound on the error of estimation</em>.</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>example 4.19</h2></hgroup><article  id="example-4.19" class="build">

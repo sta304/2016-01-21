@@ -46,7 +46,7 @@ qqnorm(y_bar_replicated)
 
 # So everything's great! Let's increase n...
 
-n <- 5000
+n <- 9000
 var_y_bar <- sigma2/n*(N-n)/(N-1)
 srs_replicated <- replicate(k, sample(population, size = n, replace = FALSE))
 y_bar_replicated <- apply(srs_replicated, 2, mean)

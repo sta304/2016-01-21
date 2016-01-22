@@ -104,9 +104,9 @@ Conclusion: $\hat{V}(\bar{y})$ is unbiased for $V(\bar{y})$.
 
 In fact it was defined presicely to acheive unbiasedness.
 
-Summary: $\hat{y}$ is a random variable with mean $\mu$ and variance $V(\bar{y})$, which depends on $\sigma^2$, so we will use the specically constructed $\hat{V}({\bar{y})}$ to estimate it.
+Summary: $\bar{y}$ is a random variable with mean $\mu$ and variance $V(\bar{y})$, which depends on $\sigma^2$, so we will use the specically constructed $\hat{V}({\bar{y})}$ to estimate it.
 
-In other words $\hat{V}({\bar{y})}$ is the *standard error* of $\bar{y}$. 
+In other words $\sqrt{\hat{V}({\bar{y})}}$ is the *standard error* of $\bar{y}$. 
 
 $\hat{V}(\bar{y}) = \frac{s^2}{n}\left(\frac{N-n}{N}\right)$ is very close to $\frac{s^2}{n}$ when $n$ is small compared to $N$. This perhaps suggests a concept of "approximate independence". 
 
@@ -127,7 +127,7 @@ So we're saved. Apply the "Central Limit Theorem". As long as $n$ is large, $\ba
 
 OK, well not quite (in theory), but it seems like we really are saved, except possibly from our own stupidity.
 
-There are lots of "Central Limit Theorems" for various situations, include for sampling from finite populations.
+There are lots of "Central Limit Theorems" for various situations, including for sampling from finite populations.
 
 As long as $n$ is large enough, and not too close to $N$ which is also large, the following will hold:
 $$\bar{y} \sim^{approx} N\left(\mu, \frac{\sigma^2}{n}\left(\frac{N-n}{N-1}\right) \right)$$
@@ -151,9 +151,9 @@ but we'll use the fact the $N(0,1) \approx t_{n-1}$ for $n$ large enough and dis
 > * The technically correct value of "2" might be 1.96 (for N(0,1)), `r round(qt(0.975, 40), 3)` (for $t_{39}$) and so on. But we'll just use 2 as a value for "2", because frankly these are all approximations anyway. 
 
 > * We have all the building blocks. Our basic interval will simply be:
-$$\bar{y} \pm 2 \hat{V}(\bar{y})$$
+$$\bar{y} \pm 2 \sqrt{\hat{V}(\bar{y})}$$
 
-> * *The Book* calls $2 \hat{V}(\bar{y})$ *the bound on the error of estimation*.
+> * *The Book* calls $2 \sqrt{\hat{V}(\bar{y})}$ *the bound on the error of estimation*.
 
 ## example 4.19 { .build }
 
