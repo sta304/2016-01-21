@@ -161,12 +161,12 @@ $$\bar{y} \pm 2 \sqrt{\hat{V}(\bar{y})}$$
 
 The numbers of cavities in the `r (n <- 10)` children (from the table) were:
 ```{r, echo=FALSE}
-N <- 1000
+N <- 100
 (cavities <- c(0, 4, 2, 3, 2, 0, 3, 4, 1, 1))
 n <- length(cavities)
 ```
 
-The estimated mean is `r mean(cavities)` and $s^2$ is `r round(var(cavities), 3)`, so the standard error is $\sqrt{\frac{`r round(var(cavities), 3)`}{`r n`}\frac{`r N-n`}{`r N`}}$ = `r round(sqrt(var(cavities)*(N-n)/N), 3)`.
+The estimated mean is `r mean(cavities)` and $s^2$ is `r round(var(cavities), 3)`, so the standard error is $\sqrt{\frac{`r round(var(cavities), 3)`}{`r n`}\frac{`r N-n`}{`r N`}}$ = `r round(sqrt(var(cavities)/n*(N-n)/N), 3)`.
 
 
 
