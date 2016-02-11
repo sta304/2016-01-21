@@ -157,7 +157,7 @@ $$\bar{y} \pm 2 \sqrt{\hat{V}(\bar{y})}$$
 
 ## example 4.19 { .build }
 
-"A dentist was interested in the effectiveness of a new toothpaste. A group of N = 1000 schoolchildren participated in a study. Prestudy records showed there was an average of 2.2 cavities every six months for the group. After three months of the study, the dentist sampled n = 10 children to determine how they were progressing on the new toothpaste. Using the data in the accompanying table, estimate the mean number of cavities for the entire group and place a bound on the error of estimation."
+"A dentist was interested in the effectiveness of a new toothpaste. A group of N = 100 schoolchildren participated in a study. Prestudy records showed there was an average of 2.2 cavities every six months for the group. After three months of the study, the dentist sampled n = 10 children to determine how they were progressing on the new toothpaste. Using the data in the accompanying table, estimate the mean number of cavities for the entire group and place a bound on the error of estimation."
 
 The numbers of cavities in the `r (n <- 10)` children (from the table) were:
 ```{r, echo=FALSE}
